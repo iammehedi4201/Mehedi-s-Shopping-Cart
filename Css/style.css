@@ -1,0 +1,29 @@
+html, body
+{ 
+    min-height: 100vh;
+    overflow: auto;
+    margin: 0px;
+    padding: 0px;
+}
+.container
+{
+    background-color: aliceblue;
+}
+
+/* Mobile Section Css start from here */
+#flexMobileDetailsChild
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.mobileDetailsChildPhoto
+{
+    width: 35%;
+}
+
+.crossImage
+{
+    margin-left: 20px;;
+}
