@@ -19,11 +19,11 @@
 
         <!-- Mobile Section html start from here -->
 
-        <section class="row g-4 phoneSection">
+        <section class="row  g-4 phoneSection">
             <div class="col-md-6 mobileDetails">
                 <div id="flexMobileDetailsChild" class="mobileDetailsChild">
 
-                    <div class="mobileDetailsChildPhoto">
+                    <div class="mobileDetails ChildPhoto">
                         <img class="img-fluid " src="images/product-1.png" alt="">
                     </div>
                     <div class="mobileDetailsChild text">
@@ -37,18 +37,18 @@
             <div class="col-md-6 mobilePriceDetails">
                 <div id="flexMobileDetailsChild" class="mobilePriceDetailsChild">
                      <div class="mobilePriceDetailsChild button" id="flexMobileDetailsChild" >
-                        <button type="button" class="btn"><i class="fas fa-minus"></i></button>
+                        <button id="minusBtn" type="button" class="btn buttonMargin"><i class="fas fa-minus"></i></button>
 
-                        <form  action="">
-                            <input class="form-control text-center"  type="text" value="1">
+                        <form id="resizeForm" action="">
+                            <input id="inputValue"  class="form-control text-center"  type="text" value="1">
                         </form>
 
-                        <button type="button" class="btn"><i class="fas fa-plus"></i></button>
+                        <button id="plusBtn" type="button" class="btn buttonMargin"><i class="fas fa-plus"></i></button>
 
                      </div>
 
                      <div class="mobilePriceDetailsChild price ">
-                        <h3>$1219</h3>
+                        <h3 >$<span id="perMobilePrice">1219</span></h3>
                      </div>
 
                      <div class="mobilePriceDetailsChild crossImage">
@@ -59,28 +59,16 @@
         </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- Mobile Case html start from here -->
 
-<!-- <section class="row g-4 phoneCaseSection">
+ <section class="row g-4 phoneCaseSection">
         <div class="col-md-6 mobileCaseDetails">
-            <div class="mobileCaseDetails child ">
+            <div id="flexMobileDetailsChild" class="mobileCaseDetails child ">
 
-                <div class="mobileCaseDetailsChild photo">
-                    <img class="img-fluid w-25" src="images/product-2.png" alt="">
+                <div class="mobileCaseDetails ChildPhoto">
+                    <img class="img-fluid" src="images/product-2.png" alt="">
                 </div>
+
                 <div class="mobileDetailsChild text">
                     <h3>IPhone 11 Silicone Case - Black
                     </h3>
@@ -90,15 +78,15 @@
 
         </div>
         <div class="col-md-6 mobileCasePriceDetails">
-            <div class="mobileCasePriceDetailsChild">
-                <div class="mobileCasePriceDetailsChild button">
-                    <button type="button" class="btn"><i class="fas fa-minus"></i></button>
+            <div id="flexMobileDetailsChild" class="mobileCasePriceDetailsChild">
+                <div id="flexMobileDetailsChild" class="mobileCasePriceDetailsChild button">
+                    <button type="button" class="btn buttonMargin"><i class="fas fa-minus"></i></button>
 
-                    <form  action="">
-                        <input class="form-control"  type="text" value="1">
+                    <form id="resizeForm"  action="">
+                        <input class="form-control text-center"  type="text" value="1">
                     </form>
 
-                    <button type="button" class="btn"><i class="fas fa-plus"></i></button>
+                    <button type="button" class="btn buttonMargin"><i class="fas fa-plus"></i></button>
 
                 </div>
 
@@ -115,22 +103,28 @@
 
     <!-- Total Bill Section Html start from here -->
 
-    <!-- <section class="row g-4 totalBillSection">
-        <div class="col-md-6 totalBillList">
-            <div class="totalBillList child">
+    <section id="alignTotalBillSection" class="row g-4 totalBillSection">
+        <div class="col-md-6 col-6  totalBillList">
+            <div id="" class="totalBillList child">
                 <h3>Subtotal:</h3>
                 <h3>Tax:</h3>
                 <h3>Total:</h3>
             </div>
         </div>
-        <div class="col-md-6 totalBillAmounts">
+        <div class="col-md-6 col-6 totalBillAmounts">
             <div class="totalBillAmounts child">
-                <h3>$1,278</h3>
-                <h3>$0</h3>
-                <h3>$1,278</h3>
+                <h3 id="text-align">$1,278</h3>
+                <h3 id="text-align">$0</h3>
+                <h3 id="text-align">$1,278</h3>
             </div>
         </div>
-    </section> --> 
+        <div class="d-grid">
+            <button type="button" class="btn btn-success btn-block">Submit</button>
+          </div>
+    </section> 
+
+    <!-- submit Button html start from here -->
+
 
     
 
@@ -159,5 +153,7 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
